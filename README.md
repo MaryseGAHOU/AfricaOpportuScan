@@ -69,7 +69,7 @@ The sample opportunities used by the audit are explicitly fictional and are not 
 ## Submission links
 
 - **Public Apify Store URL**: https://apify.com/maryse_gahou/africa-opportuscan
-- **Public GitHub URL**: add after publication.
+- **Public GitHub URL**: https://github.com/MaryseGAHOU/AfricaOpportuScan
 - **Live dashboard URL**: add after deployment.
 
 Submit the public Apify Store link for the hackathon.
