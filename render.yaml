@@ -3,6 +3,7 @@ services:
     name: africa-opportuscan
     runtime: node
     plan: free
-    buildCommand: npm install --prefix africa-opportuscan
-    startCommand: node dashboard/server.js
+    rootDir: dashboard
+    buildCommand: ""
+    startCommand: node server.js
     autoDeploy: true
