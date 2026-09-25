@@ -1,0 +1,62 @@
+{
+  "title": "Africa OpportuScan input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "sources": {
+      "title": "Sources to scrape",
+      "type": "array",
+      "description": "One entry per site. sourceName, url and CSS selectors (listItemSelector = one card/row per opportunity, titleSelector, linkSelector, deadlineSelector optional).",
+      "editor": "json",
+      "prefill": [
+        {
+          "sourceName": "GreatYOP (bourses, francophone)",
+          "url": "https://greatyop.com/category/bourses/",
+          "listItemSelector": "article",
+          "titleSelector": "h2.entry-title a",
+          "linkSelector": "h2.entry-title a",
+          "deadlineSelector": ".gy-pcard-bottom p"
+        },
+        {
+          "sourceName": "OYA Opportunities",
+          "url": "https://oyaop.com/opportunities/scholarships-and-fellowships",
+          "listItemSelector": "article.single_archive_detail",
+          "titleSelector": "h5.single_archive_title",
+          "linkSelector": "a[href*='/opportunity/']",
+          "deadlineSelector": ".single_archive_deadline"
+        },
+        {
+          "sourceName": "Opportunities For Africans",
+          "url": "https://www.opportunitiesforafricans.com/category/scholarships/",
+          "listItemSelector": "article.post",
+          "titleSelector": "h2.penci-entry-title a",
+          "linkSelector": "h2.penci-entry-title a",
+          "deadlineSelector": ""
+        },
+        {
+          "sourceName": "Opportunity Desk",
+          "url": "https://opportunitydesk.org/category/fellowships-and-scholarships/",
+          "listItemSelector": "article",
+          "titleSelector": "h2.post-title a",
+          "linkSelector": "h2.post-title a",
+          "deadlineSelector": ""
+        },
+        {
+          "sourceName": "Scholarship Corner",
+          "url": "https://scholarshipscorner.website/category/scholarships/",
+          "listItemSelector": "article.elementor-post",
+          "titleSelector": ".elementor-post__title a",
+          "linkSelector": ".elementor-post__title a",
+          "deadlineSelector": ""
+        }
+      ]
+    },
+    "maxItemsPerSource": {
+      "title": "Max items per source",
+      "type": "integer",
+      "description": "Safety cap so a single source can't exhaust the run.",
+      "default": 30
+    }
+  },
+  "required": ["sources"]
+}

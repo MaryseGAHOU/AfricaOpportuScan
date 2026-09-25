@@ -1,0 +1,18 @@
+{
+  "name": "africa-opportuscan",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Apify Actor that scrapes scholarship and academic opportunity listings for African students.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "start:dev": "APIFY_LOG_LEVEL=DEBUG node src/main.js"
+  },
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.11.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

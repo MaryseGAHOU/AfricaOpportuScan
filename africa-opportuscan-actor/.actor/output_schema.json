@@ -1,0 +1,14 @@
+{
+  "$schema": "https://apify-projects.github.io/actor-json-schemas/output.json?v=0.3",
+  "actorOutputSchemaVersion": 1,
+  "title": "Africa OpportuScan results",
+  "description": "Dataset containing the scholarship, grant and academic opportunities collected by the Actor.",
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "title": "Opportunity dataset",
+      "description": "Public opportunity records scraped during this run.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "label": "Profil minimal (données quasi vides)",
+    "group": "MIN",
+    "profile": {
+      "nationality": "BJ",
+      "targetLevel": "master"
+    }
+  },
+  {
+    "label": "Étudiante informatique — Bénin (francophone)",
+    "group": "STEM-MASTER",
+    "profile": {
+      "nationality": "BJ",
+      "targetLevel": "master",
+      "fields": ["informatique"],
+      "goal": "bourse-etudes",
+      "needsFullFunding": true,
+      "languages": [{ "code": "fr", "level": "C1" }, { "code": "en", "level": "B1" }],
+      "preferredDestinations": ["europe"]
+    }
+  },
+  {
+    "label": "Student, computer science — Nigeria (anglophone)",
+    "group": "STEM-MASTER",
+    "profile": {
+      "nationality": "NG",
+      "targetLevel": "master",
+      "fields": ["informatique"],
+      "goal": "bourse-etudes",
+      "needsFullFunding": true,
+      "languages": [{ "code": "en", "level": "C1" }, { "code": "fr", "level": "A2" }],
+      "preferredDestinations": ["europe"]
+    }
+  },
+  {
+    "label": "Doctorant agronomie — Sénégal (francophone)",
+    "group": "PHD",
+    "profile": {
+      "nationality": "SN",
+      "targetLevel": "doctorat",
+      "fields": ["agronomie"],
+      "goal": "financement-these",
+      "needsFullFunding": true,
+      "languages": [{ "code": "fr", "level": "C1" }, { "code": "en", "level": "B2" }],
+      "age": 27
+    }
+  },
+  {
+    "label": "PhD candidate, agronomy — Kenya (anglophone)",
+    "group": "PHD",
+    "profile": {
+      "nationality": "KE",
+      "targetLevel": "doctorat",
+      "fields": ["agronomie"],
+      "goal": "financement-these",
+      "needsFullFunding": true,
+      "languages": [{ "code": "en", "level": "C1" }, { "code": "fr", "level": "A2" }],
+      "age": 27
+    }
+  },
+  {
+    "label": "Étudiante licence physique — Côte d'Ivoire",
+    "group": "LICENCE",
+    "profile": {
+      "nationality": "CI",
+      "targetLevel": "licence",
+      "fields": ["physique"],
+      "goal": "bourse-etudes",
+      "needsFullFunding": true,
+      "languages": [{ "code": "fr", "level": "B1" }]
+    }
+  }
+]

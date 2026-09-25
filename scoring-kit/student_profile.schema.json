@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "africa-opportuscan/student-profile",
+  "title": "Student Profile - Africa OpportuScan",
+  "description": "Profile structure used by the ranking engine. Only fields in ALLOWED_PROFILE_KEYS are read; all other fields are ignored. Nationality and targetLevel are required for eligibility only.",
+  "type": "object",
+  "properties": {
+    "nationality": {
+      "type": "string",
+      "title": "Nationality",
+      "description": "ISO 3166-1 alpha-2 country code. Used only for eligibility, never for scoring.",
+      "examples": ["BJ"]
+    },
+    "residenceCountry": {
+      "type": "string",
+      "title": "Country of residence",
+      "description": "ISO 3166-1 alpha-2 code. Optional and not used in scoring.",
+      "examples": ["BJ"]
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 0,
+      "title": "Age",
+      "description": "Optional. Used only when the opportunity has an official age limit. Never used in scoring.",
+      "examples": [22]
+    },
+    "currentLevel": {
+      "type": "string",
+      "enum": ["licence", "master", "doctorat", "postdoc"],
+      "title": "Current study level",
+      "examples": ["licence"]
+    },
+    "targetLevel": {
+      "type": "string",
+      "enum": ["licence", "master", "doctorat", "postdoc"],
+      "title": "Target study level",
+      "description": "Required for the eligibility filter.",
+      "examples": ["master"]
+    },
+    "fields": {
+      "type": "array",
+      "items": { "type": "string" },
+      "title": "Fields of study",
+      "description": "Field slugs shared with the opportunity dataset.",
+      "examples": [["informatique", "data-science"]]
+    },
+    "goal": {
+      "type": "string",
+      "enum": ["bourse-etudes", "financement-these", "stage-recherche", "mobilite", "formation"],
+      "title": "Goal",
+      "examples": ["bourse-etudes"]
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string", "description": "ISO 639-1 language code" },
+          "level": { "type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2", "native"], "description": "CEFR level" }
+        },
+        "required": ["code", "level"]
+      },
+      "title": "Languages",
+      "description": "A gap is shown as a recommendation and never excludes an opportunity.",
+      "examples": [[{ "code": "fr", "level": "C1" }, { "code": "en", "level": "B1" }]]
+    },
+    "needsFullFunding": {
+      "type": "boolean",
+      "title": "Needs full funding",
+      "examples": [true]
+    },
+    "preferredDestinations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "title": "Preferred destinations",
+      "description": "ISO 3166-1 alpha-2 country codes or region slugs. No preference receives full points.",
+      "examples": [["europe"]]
+    }
+  },
+  "required": ["nationality", "targetLevel"],
+  "additionalProperties": false
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "EX-001", "minAge": 0, "title": "[EXEMPLE FICTIF] Bourse Excellence Numérique (mondiale)", "provider": "Fournisseur fictif A",
+    "url": "https://example.org/ex-001", "type": "bourse-etudes", "levels": ["master"],
+    "fields": ["informatique", "ia", "data-science"], "eligibleCountries": ["ALL"],
+    "hostCountry": "CA", "hostRegion": "amerique-nord", "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "B2" }, { "code": "fr", "minLevel": "B2" }], "deadline": "2026-11-25"
+  },
+  {
+    "id": "EX-002", "minAge": 0, "title": "[EXEMPLE FICTIF] Programme Data Afrique", "provider": "Fournisseur fictif B",
+    "url": "https://example.org/ex-002", "type": "bourse-etudes", "levels": ["master"],
+    "fields": ["data-science", "mathematiques", "informatique"], "eligibleCountries": ["AFRICA"],
+    "hostCountry": "ZA", "hostRegion": "afrique", "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "B2" }, { "code": "fr", "minLevel": "B2" }], "deadline": "2026-10-30"
+  },
+  {
+    "id": "EX-003", "minAge": 0, "title": "[EXEMPLE FICTIF] Scholarship pays du Commonwealth", "provider": "Fournisseur fictif C",
+    "url": "https://example.org/ex-003", "type": "bourse-etudes", "levels": ["master", "doctorat"],
+    "fields": ["all"], "eligibleCountries": ["NG", "GH", "KE", "ZA", "UG", "TZ", "ZM", "SL"],
+    "hostCountry": "GB", "hostRegion": "europe", "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "C1" }], "deadline": "2026-11-10"
+  },
+  {
+    "id": "EX-004", "minAge": 0, "title": "[EXEMPLE FICTIF] Bourse Francophonie Agro-Environnement", "provider": "Fournisseur fictif D",
+    "url": "https://example.org/ex-004", "type": "bourse-etudes", "levels": ["master", "doctorat"],
+    "fields": ["agronomie", "environnement"], "eligibleCountries": ["BJ", "SN", "CI", "CM", "TG", "ML", "BF", "NE", "GN", "CD", "MG"],
+    "hostCountry": "FR", "hostRegion": "europe", "funding": "partial",
+    "languages": [{ "code": "fr", "minLevel": "B2" }], "deadline": "2026-10-20"
+  },
+  {
+    "id": "EX-005", "minAge": 0, "title": "[EXEMPLE FICTIF] Financement de thèse — tous domaines", "provider": "Fournisseur fictif E",
+    "url": "https://example.org/ex-005", "type": "financement-these", "levels": ["doctorat"],
+    "fields": ["all"], "eligibleCountries": ["ALL"],
+    "hostRegion": "europe", "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "B2" }, { "code": "fr", "minLevel": "B2" }], "deadline": "2026-10-25"
+  },
+  {
+    "id": "EX-006", "minAge": 0, "title": "[EXEMPLE FICTIF] Appel clôturé", "provider": "Fournisseur fictif F",
+    "url": "https://example.org/ex-006", "type": "bourse-etudes", "levels": ["master"],
+    "fields": ["informatique"], "eligibleCountries": ["ALL"], "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "B2" }], "deadline": "2026-09-10"
+  },
+  {
+    "id": "EX-007", "minAge": 0, "title": "[EXEMPLE FICTIF] Bourse de licence en sciences", "provider": "Fournisseur fictif G",
+    "url": "https://example.org/ex-007", "type": "bourse-etudes", "levels": ["licence"],
+    "fields": ["physique", "chimie", "mathematiques"], "eligibleCountries": ["ALL"], "funding": "partial",
+    "languages": [{ "code": "fr", "minLevel": "B1" }, { "code": "en", "minLevel": "B1" }], "deadline": "2026-12-15"
+  },
+  {
+    "id": "EX-008", "minAge": 0, "title": "[EXEMPLE FICTIF] Contrat doctoral Agro Afrique", "provider": "Fournisseur fictif H",
+    "url": "https://example.org/ex-008", "type": "financement-these", "levels": ["doctorat"],
+    "fields": ["agronomie", "environnement", "biologie"], "eligibleCountries": ["AFRICA"],
+    "hostCountry": "SN", "hostRegion": "afrique", "funding": "partial",
+    "languages": [{ "code": "fr", "minLevel": "B2" }, { "code": "en", "minLevel": "B2" }], "deadline": "2026-10-14"
+  },
+  {
+    "id": "EX-009", "title": "[EXEMPLE FICTIF] Appel à candidatures (métadonnées incomplètes)", "provider": "Fournisseur fictif I",
+    "url": "https://example.org/ex-009", "levels": ["master"]
+  },
+  {
+    "id": "EX-010", "minAge": 0, "title": "[EXEMPLE FICTIF] Master IA — enseignement en anglais", "provider": "Fournisseur fictif J",
+    "url": "https://example.org/ex-010", "type": "bourse-etudes", "levels": ["master"],
+    "fields": ["ia", "informatique"], "eligibleCountries": ["ALL"],
+    "hostCountry": "CA", "hostRegion": "amerique-nord", "funding": "full",
+    "languages": [{ "code": "en", "minLevel": "C1" }], "deadline": "2026-10-18"
+  },
+  {
+    "id": "EX-011", "minAge": 0, "title": "[EXEMPLE FICTIF] Stage de recherche d'été", "provider": "Fournisseur fictif K",
+    "url": "https://example.org/ex-011", "type": "stage-recherche", "levels": ["master", "doctorat"],
+    "fields": ["physique", "chimie", "biologie"], "eligibleCountries": ["AFRICA"],
+    "hostCountry": "DE", "hostRegion": "europe", "funding": "partial",
+    "languages": [{ "code": "en", "minLevel": "B2" }], "deadline": "2026-10-02"
+  },
+  {
+    "id": "EX-012", "title": "[EXEMPLE FICTIF] Bourse jeunes talents (30 ans max)", "provider": "Fournisseur fictif L",
+    "url": "https://example.org/ex-012", "type": "bourse-etudes", "levels": ["master"],
+    "fields": ["economie", "gestion", "informatique"], "eligibleCountries": ["ALL"], "minAge": 18, "maxAge": 30,
+    "funding": "partial",
+    "languages": [{ "code": "en", "minLevel": "B2" }, { "code": "fr", "minLevel": "B2" }], "deadline": "2026-12-05"
+  }
+]

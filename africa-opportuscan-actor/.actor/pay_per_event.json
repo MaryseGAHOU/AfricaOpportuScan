@@ -1,0 +1,16 @@
+[
+  {
+    "apify-actor-start": {
+      "eventTitle": "Actor start",
+      "eventDescription": "Flat fee charged automatically by Apify when the Actor starts, covering base compute cost.",
+      "eventPriceUsd": 0.0001
+    }
+  },
+  {
+    "opportunity-scraped": {
+      "eventTitle": "Opportunity found",
+      "eventDescription": "Charged once per scholarship / grant / opportunity successfully extracted and added to the dataset.",
+      "eventPriceUsd": 0.02
+    }
+  }
+]

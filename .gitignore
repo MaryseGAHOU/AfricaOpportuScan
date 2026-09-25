@@ -1,0 +1,4 @@
+africa-opportuscan-actor/node_modules/
+africa-opportuscan-actor/storage/
+*.log
+.DS_Store

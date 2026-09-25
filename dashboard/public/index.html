@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Africa OpportuScan helps African students discover and compare academic opportunities.">
+<title>Africa OpportuScan | Find your next opportunity</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/" aria-label="Africa OpportuScan home">
+      <span class="logo" aria-hidden="true">✦</span>
+      <span class="brand-copy"><strong>Africa OpportuScan</strong><small data-i18n="tagline"></small></span>
+    </a>
+    <div class="topbar-actions">
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-option" data-lang="en">EN</button>
+        <button type="button" class="lang-option" data-lang="fr">FR</button>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+</header>
+
+<div class="disclaimer"><span aria-hidden="true">ⓘ</span><span data-i18n="disclaimer"></span> <strong data-i18n="officialSite"></strong></div>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow"><span></span><span data-i18n="eyebrow"></span></div>
+    <h2 data-i18n="heroTitle"></h2>
+    <p data-i18n="heroText"></p>
+    <div class="hero-points"><span>✓ <b data-i18n="pointOne"></b></span><span>✓ <b data-i18n="pointTwo"></b></span></div>
+  </section>
+
+  <div class="content-grid">
+    <section class="card form-card">
+      <div class="section-heading"><div><span class="step">01</span><h2 data-i18n="profileTitle"></h2></div><span class="hint" data-i18n="profileMeta"></span></div>
+      <form id="profileForm">
+        <div class="grid">
+          <label><span data-i18n="nationality"></span> *
+            <select id="nationality" required><option value="" data-i18n="choose"></option></select>
+          </label>
+          <label><span data-i18n="targetLevel"></span> *
+            <select id="targetLevel" required>
+              <option value="" data-i18n="choose"></option>
+              <option value="licence" data-i18n="licence"></option>
+              <option value="master" data-i18n="master"></option>
+              <option value="doctorat" data-i18n="doctorate"></option>
+              <option value="postdoc" data-i18n="postdoc"></option>
+            </select>
+          </label>
+          <label><span data-i18n="goal"></span>
+            <select id="goal">
+              <option value="" data-i18n="notSpecified"></option>
+              <option value="bourse-etudes" data-i18n="studyScholarship"></option>
+              <option value="financement-these" data-i18n="phdFunding"></option>
+              <option value="stage-recherche" data-i18n="researchInternship"></option>
+              <option value="mobilite" data-i18n="mobility"></option>
+              <option value="formation" data-i18n="training"></option>
+            </select>
+          </label>
+          <label><span data-i18n="age"></span> <span class="hint" data-i18n="ageHint"></span>
+            <input type="number" id="age" min="10" max="80" placeholder="e.g. 22">
+          </label>
+        </div>
+
+        <div class="form-block"><label><span data-i18n="fields"></span> <span class="hint" data-i18n="multiple"></span></label><div class="chips" id="fieldsChips"></div></div>
+        <div class="form-block"><label><span data-i18n="languages"></span> <span class="hint" data-i18n="languageHint"></span></label><div id="langRows"></div><button type="button" class="btn-ghost" id="addLang"><span aria-hidden="true">＋</span> <span data-i18n="addLanguage"></span></button></div>
+        <div class="grid form-block"><label class="check"><input type="checkbox" id="needsFullFunding"> <span data-i18n="fullFunding"></span></label><label><span data-i18n="destinations"></span> <span class="hint" data-i18n="destinationHint"></span><div class="chips" id="destChips"></div></label></div>
+        <button type="submit" class="btn-primary" id="submitBtn" data-i18n="analyze"></button>
+        <p class="hint privacy" data-i18n="privacy"></p>
+      </form>
+    </section>
+
+    <section id="results" hidden>
+      <div class="results-head" id="resultsHead"></div>
+      <div class="hints" id="profileHints"></div>
+      <div id="ranked"></div>
+      <div class="excluded-toggle-wrap"><button class="btn-ghost" id="excludedToggle" hidden></button></div>
+      <div id="excluded" hidden></div>
+    </section>
+  </div>
+
+  <section class="card transparency">
+    <div class="section-heading"><div><span class="step">02</span><h3 data-i18n="transparencyTitle"></h3></div><span class="mini-badge" data-i18n="transparentBadge"></span></div>
+    <p data-i18n="transparencyText"></p>
+  </section>
+</main>
+
+<footer><strong>Africa OpportuScan</strong><span> · </span><span data-i18n="footer"></span></footer>
+<script src="/app.js"></script>
+</body>
+</html>
