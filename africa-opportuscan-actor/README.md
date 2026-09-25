@@ -70,6 +70,10 @@ Results are written to `storage/datasets/default/`.
 
 **Public Store URL:** https://apify.com/maryse_gahou/africa-opportuscan
 
+## Live demo
+
+https://africaopportuscan.onrender.com/
+
 The Pay-per-event file is a configuration reference. The pricing must also be enabled in the Apify Console.
 
 ## Transparency and limitations
